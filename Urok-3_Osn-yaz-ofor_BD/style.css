@@ -1,0 +1,60 @@
+body {
+  background-color: #f8f8f8;
+}
+.menu a {
+  color: grey;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+.menu {
+  list-style-type: none;
+}
+.heading1 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaee;
+}
+.short_descr {
+  color: #707070;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+.full_descr {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.goods_charcs {
+  color: rgb(126, 126, 126);
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-image: url(img/icon/icon-list.png);
+}
+
+#inp_adrs,
+#inp_tel {
+  width: 500px;
+  height: 25px;
+  color: #242121;
+  font-size: 15px;
+  font-weight: normal;
+}
+#inp_tel {
+  width: 120px;
+  height: 20px;
+}
+
+img.min_goods {
+  outline: 2px solid #3d3939;
+}
+
+.text_zakaz {
+  font-size: 19px;
+  font-weight: 600;
+}
