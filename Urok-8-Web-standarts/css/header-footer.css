@@ -1,0 +1,205 @@
+/* 
+  В этом css-файле планируется помещать все стили,
+  повторяющиеся на всех страничках в папке pages 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,700');    
+/* #region изменения bootstrap-а */ 
+
+.navbar {
+  padding-top: 0;
+}
+/* #region изменения bootstrap-а */
+body {
+  font-family: Montserrat;
+  background-color: #f5f5f5;
+  overflow-x: hidden; /*для того, чтобы скрыть остатки блока .main-content::before */
+}
+.header {
+  margin-top: 63px;
+}
+.heading-pages{
+  color:  #212121;
+  font-size: 62px;
+  font-weight: 100;
+  margin-top: 150px;
+}
+
+.main-content {
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #fff;
+}
+.main-content::before { 
+  content: "";
+  width: 100vw;
+  height: 100%;
+  margin-left: -50vw;
+
+  background-color: inherit;
+  
+  left: 50%;
+  top: 0; 
+  position: absolute;
+  z-index: -1;
+}
+
+.m_nav a {
+  color:  #212121;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 !important;
+}
+.m_nav li {
+  margin-right: 25px;
+}
+
+.m_nav li:hover {
+  border-bottom: 2px solid #000;
+  margin-top: -2px;
+}
+.m_nav li:hover a {
+  font-weight: bold;
+}
+
+#my-search {
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/search.png);  
+  background-color: transparent;
+  border: none;
+}
+#my-search:hover {
+  border-bottom: unset;
+  cursor: pointer;
+  background-size: 110% 110%;
+}
+
+.m_nav li:nth-child(1) { width: 48px; }
+.m_nav li:nth-child(2) { width: 84px; }
+.m_nav li:nth-child(3) { width: 66px; }
+.m_nav li:nth-child(4) { width: 97px; }
+.m_nav li:nth-child(5) { width: 73px; }
+
+@media (max-width: 767px) {
+  #navbarSupportedContent {
+    margin-top: 10px;
+  }
+  .m_nav li {
+    margin: 0 auto;
+    height: 23px;
+    overflow: hidden;
+  }
+  .m_nav li:hover {
+    border-bottom: unset;
+    margin-top: 0;
+    
+  }
+}
+
+/* #region footer*/
+.footer {
+  padding-top: 120px;
+  padding-bottom: 25px;
+}
+.footer h3 {
+  color:  #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact-us p {
+  letter-spacing: 0.9;
+}
+.contact-us p,
+.information li a,
+.lets-stay p{
+  color:  #212121;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+.information ul {
+  padding-left: 0;
+} 
+.information ul:last-child {
+  margin-right: 0;
+}
+.information .row {
+  margin: 0 0;
+}
+.information li { 
+  list-style-type: none;
+}
+.information li a { 
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 26px;
+}
+.information li a:hover { 
+  text-decoration: underline;
+}
+.footer #email,
+.footer #submit {
+  border: 1px solid #d9dee1;
+  height: 48px;
+}
+.footer #email {
+  max-width: 322px;
+  box-sizing: border-box;
+  border-right: none;
+  padding-left: 15px;
+  float: left;
+}
+.footer #submit {
+  box-sizing: border-box;
+  width: 48px;
+  background: transparent url(../img/strelka.png) no-repeat center center;
+  border-left: none;
+}
+.footer #submit:hover {
+  cursor: pointer;
+  border-left: 1px solid #d9dee1;
+  margin-left: -1px;
+  padding-right: 1px;
+  width: 49px;
+}
+.footer > div:last-child p {
+  text-transform: uppercase;
+  color: #6c6c6c;
+  font-size: 12px; 
+  font-weight: 700;
+  line-height: 28px;
+}
+.footer > div:last-child p:last-of-type a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer > div:last-child p:last-of-type a:hover {
+  text-decoration: underline;
+}
+.social-net > a {
+  display: inline-block;
+  text-decoration: none;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/social-links.png);
+  background-repeat: no-repeat;
+}
+.social-net > a:nth-child(1) {
+  background-position: 0 0;
+}
+.social-net > a:nth-child(2) {
+  background-position: -34px 0;
+}
+.social-net > a:nth-child(3) {
+  background-position: -68px 0;
+}
+.social-net > a:nth-child(4) {
+  background-position: -101px 0;
+}
+.footer > .row:last-child {
+  margin-top: 27px;
+}
+/* #endregion footer*/
