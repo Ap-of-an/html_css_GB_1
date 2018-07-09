@@ -1,0 +1,131 @@
+.products-menu {
+  padding-left: 0;
+  list-style-type: none;
+
+  margin: 70px 0;
+}
+.products-menu li {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 10px 1px;
+  margin-right: -0.25em;
+  margin-bottom: 10px;
+}
+.products-menu li:first-child{
+  padding-left: 2px;
+}
+.products-menu li:last-child {
+  padding-right: 2px;
+}
+.products-menu li:nth-child(2),
+.products-menu li:nth-child(3) {
+  border-bottom: 1px solid #000;
+}
+.products-menu li a { 
+  text-decoration: none;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+.products-menu li.active {
+  border-bottom: 2px solid #000;
+  padding-bottom: 0;
+}
+.products-menu li:hover a {
+  color: #212121;
+}
+
+.products-list {
+ 
+}
+.products-list a {
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding: 0;
+  max-width: 350px;
+}
+.products-list a:nth-child(3n) {
+  margin-right: 0;
+}
+.products-list a:hover {
+  outline: 1px solid rgba(161, 161, 161, 0.714);
+}
+.products-list a img {
+  width: 100%;
+  height: 100%;
+}
+
+.refrech-icon {
+  display: block;
+  width: 45px;
+  height: 32px;
+  background: url(../img/refresh-icon.png) no-repeat center center;
+  margin: 70px auto 140px;
+}
+.refrech-icon:hover { 
+  background-size: 103% 103%;
+}
+
+/* #region promo-product*/
+.promo-product {
+  max-width: 1366px;
+  margin: 0 auto;
+  
+}
+.promo-product .row > div {
+  padding-left: 50px;
+}
+.promo-product .row > div:first-child {
+  background: url(../img/products/promo-img.jpg) no-repeat center 0;
+}
+.promo-product .row > div:last-child {
+  background: url(../img/products/promo-img1.jpg) no-repeat center 0;
+}
+.promo-product .tag-text {
+  color: #1e88e5;  
+  margin-top: 228px;
+  margin-bottom: 12px;
+}
+.promo-product h2 {
+  margin-bottom: 20px;
+  color:  #212121;
+  font-size: 36px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+}
+.order-us {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 250px;
+  padding-left: 40px;
+  height: 45px;
+  width: 190px;
+  color: #212121 !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+  background-color: rgba(216, 216, 216, 0.438);
+  text-decoration: none !important;
+  box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+  border-radius: 22px;
+  position: relative;
+}
+.order-us:hover {
+  background: #fff url(../img/arrow.png) no-repeat 162px 15px;
+}
+.order-us:active {
+  box-shadow: 0px 1px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+  transform: translateY(3px);
+}
+.tag-text {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-small {
+  color:  #6c6c6c;
+  font-size: 14px;
+  font-weight: 300;
+}
+/* #endregion promo-product*/

@@ -6,14 +6,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,700');    
 /* #region изменения bootstrap-а */ 
 
-
+.navbar {
+  padding-top: 0;
+}
 /* #region изменения bootstrap-а */
 body {
   font-family: Montserrat;
   background-color: #f5f5f5;
+  overflow-x: hidden; /*для того, чтобы скрыть остатки блока .main-content::before */
 }
 .header {
-  margin-top: 80px;
+  margin-top: 63px;
 }
 .heading-pages{
   color:  #212121;
@@ -25,6 +28,7 @@ body {
 .main-content {
   background-color: #fff;
   position: relative;
+  border: 1px solid #fff;
 }
 .main-content::before { 
   content: "";
@@ -35,6 +39,7 @@ body {
   background-color: inherit;
   
   left: 50%;
+  top: 0; 
   position: absolute;
   z-index: -1;
 }
@@ -93,131 +98,108 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .header {
-  margin-top: 60px;
-  overflow: hidden;
+/* #region footer*/
+.footer {
+  padding-top: 120px;
+  padding-bottom: 25px;
 }
-.header::after {
-  content: " ";
-  display: block;
-  clear: both;
+.footer h3 {
+  color:  #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
-.m_logo {
-  
+.contact-us p {
+  letter-spacing: 0.9;
 }
-.m_nav {
-  margin-top: 3px;
-  margin-right: 65px;
-}
-.m_nav::after {
-  content: " ";
-  display: block; 
-  clear: both;
-}
-.m_nav ul {
-  list-style-type: none;
-  padding-left: 0;
-  overflow: hidden;
-  margin: 0;
-}
-.m_nav li {
-  float: left;
-  margin-right: 25px;
-}
-.m_nav li:nth-child(1) { width: 48px; }
-.m_nav li:nth-child(2) { width: 84px; }
-.m_nav li:nth-child(3) { width: 66px; }
-.m_nav li:nth-child(4) { width: 97px; }
-.m_nav li:nth-child(5) { width: 73px; }
-
-.m_nav a {
-  display: inline-block;
-  text-decoration: none;
+.contact-us p,
+.information li a,
+.lets-stay p{
   color:  #212121;
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 1px;
+  line-height: 22px;
 }
-.m_nav li:hover {
-  border-bottom: 2px solid #000;
-}
-.m_nav li:hover a {
-  font-weight: bold;
-}
-.m_nav li:last-child {
+.information ul {
+  padding-left: 0;
+} 
+.information ul:last-child {
   margin-right: 0;
 }
-.m_nav li:last-child div {
-  padding: 0;
-  width: 23px;
-  height: 23px;
-  background-image: url(../img/search.png);  
-  background-color: transparent;
-  border: none;
+.information .row {
+  margin: 0 0;
 }
-.m_nav li:last-child:hover {
-  border-bottom: unset;
+.information li { 
+  list-style-type: none;
+}
+.information li a { 
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 26px;
+}
+.information li a:hover { 
+  text-decoration: underline;
+}
+.footer #email,
+.footer #submit {
+  border: 1px solid #d9dee1;
+  height: 48px;
+}
+.footer #email {
+  max-width: 322px;
+  box-sizing: border-box;
+  border-right: none;
+  padding-left: 15px;
+  float: left;
+}
+.footer #submit {
+  box-sizing: border-box;
+  width: 48px;
+  background: transparent url(../img/strelka.png) no-repeat center center;
+  border-left: none;
+}
+.footer #submit:hover {
   cursor: pointer;
+  border-left: 1px solid #d9dee1;
+  margin-left: -1px;
+  padding-right: 1px;
+  width: 49px;
 }
-.m_nav li:last-child:hover div {
-  background-size: 110% 110%;
+.footer > div:last-child p {
+  text-transform: uppercase;
+  color: #6c6c6c;
+  font-size: 12px; 
+  font-weight: 700;
+  line-height: 28px;
 }
-
-@media (max-width: 980px) {
-  .header {
-    text-align: center;
-    margin-top: 50px;
-  }
-  .m_logo {
-    float: none;
-    margin-left: unset;
-  }
-  .m_nav {
-    float: none;
-    display: inline-block;
-    margin: 20px auto 0;  
-  }
+.footer > div:last-child p:last-of-type a {
+  text-decoration: none;
+  color: inherit;
 }
-
-@media (max-width: 550px) {
-  .m_nav li {
-    float: none;
-    border-bottom: 1px solid rgb(165, 165, 165);
-    margin-right: 0;
-    margin-bottom: 15px;
-    width: 100% !important;
-    padding-bottom: 5px;
-  }
-  .m_nav li:last-child {
-    border-bottom: unset;
-  }
-  .m_nav li:last-child div {
-    display: inline-block;
-  }
+.footer > div:last-child p:last-of-type a:hover {
+  text-decoration: underline;
 }
-
- */
+.social-net > a {
+  display: inline-block;
+  text-decoration: none;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/social-links.png);
+  background-repeat: no-repeat;
+}
+.social-net > a:nth-child(1) {
+  background-position: 0 0;
+}
+.social-net > a:nth-child(2) {
+  background-position: -34px 0;
+}
+.social-net > a:nth-child(3) {
+  background-position: -68px 0;
+}
+.social-net > a:nth-child(4) {
+  background-position: -101px 0;
+}
+.footer > .row:last-child {
+  margin-top: 27px;
+}
+/* #endregion footer*/
