@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Arial;
+  color: #333333;
+  font-size: 12px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+.wrapper {
+  max-width: 1600px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+/* #region header */
+header {
+  background-color: #445162;
+  color: #ffffff;
+}
+header .product-img-1 {
+  background-color: #ffffff;
+  float: right;
+}
+@media (min-width: 1280px) {
+  header .product-img-1 {
+    width: 469px;
+    height: 214px;
+    margin-top: -56px;
+  }
+  header ul {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  header .product-img-1 {
+    width: 400px;
+    height: 170px;
+    margin-top: -45px;
+  }
+  header ul {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 799px) {
+  header .product-img-1 {
+    max-width: 500px;
+    height: 120px;
+    float: none;
+  }
+  header ul {
+    margin-top: 30px;
+  }
+}
+header li {
+  font-size: 0.33333333em;
+  font-weight: 400;
+  line-height: 1.8em;
+  list-style-image: url(../../img/check-icon.png);
+  list-style-position: inside;
+}
+/* #endregion header */
+/* #region about-product */
+#about-product {
+  background-color: #fff;
+}
+#about-product .product-img-2 {
+  background-color: #445161;
+  float: right;
+}
+#about-product p {
+  line-height: 1.5em;
+  margin-top: 1.25em;
+}
+@media (min-width: 1280px) {
+  #about-product .product-img-2 {
+    width: 469px;
+    height: 214px;
+    margin-top: -61px;
+    margin-left: 85px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  #about-product .product-img-2 {
+    width: 400px;
+    height: 135px;
+    margin-top: -47px;
+    margin-left: 85px;
+  }
+}
+@media (max-width: 799px) {
+  #about-product .product-img-2 {
+    width: 300px;
+    height: 120px;
+    float: none;
+  }
+}
+#about-product h2 {
+  margin-bottom: 1em;
+}
+/* #endregion about-product */
+/* #region dignity-pluses */
+#dignity-pluses {
+  background-color: #f5f5f5;
+}
+#dignity-pluses h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+#dignity-pluses ul {
+  margin: 0 auto;
+}
+#dignity-pluses li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+  padding-left: 41px;
+  background: url(../../img/plus-icon.png) no-repeat 0px center;
+  max-width: 49%;
+  margin-left: 0.5%;
+  margin-bottom: 1.90em;
+}
+@media (max-width: 799px) {
+  #dignity-pluses li {
+    max-width: none;
+    min-width: 100%;
+  }
+}
+/* #endregion dignity-pluses */
+/* #region scrinshots */
+#scrinshots {
+  background-color: #fff;
+}
+#scrinshots h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+#scrinshots > div {
+  max-width: 49%;
+  margin-left: 0.5%;
+  float: left;
+  margin-bottom: 0.625em;
+}
+#scrinshots > div a {
+  display: block;
+  float: left;
+  font-size: 0.5em;
+  margin-right: 0.5em;
+}
+#scrinshots > div a img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1280px) {
+  #scrinshots > div a {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  #scrinshots > div a {
+    max-width: 150px;
+    height: 125px;
+  }
+}
+@media (max-width: 799px) {
+  #scrinshots > div a {
+    max-width: 240px;
+    height: 100px;
+  }
+}
+#scrinshots > div .title-images {
+  font-size: 0.4em;
+  margin-bottom: 0.625em;
+}
+@media (max-width: 799px) {
+  #scrinshots > div {
+    float: none;
+    max-width: none;
+  }
+}
+/* #endregion scrinshots */
+/* #region disabled */
+/* #region reviews */
+#reviews {
+  background-color: #f5f5f5;
+}
+/* #endregion reviews */
+/* #region buy-it */
+#buy-it {
+  background-color: #fff;
+}
+/* #endregion buy-it */
+/* #region footer */
+footer {
+  background-color: #445162;
+}
+/* #endregion footer */
+/* #endregion disabled */
+@media (min-width: 1280px) {
+  .wrapper {
+    font-size: 5rem;
+  }
+  header,
+  section {
+    padding: 50px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .wrapper {
+    font-size: 4rem;
+  }
+  header,
+  section {
+    padding: 30px;
+  }
+}
+@media (max-width: 799px) {
+  .wrapper {
+    font-size: 3rem;
+  }
+  header,
+  section {
+    padding: 10px;
+  }
+}
+h1 {
+  font-size: 1em;
+  font-weight: 400;
+}
+h2 {
+  font-size: 0.5em;
+  color: #445162;
+  font-weight: 400;
+}
+p,
+li {
+  font-size: 0.266666em;
+  line-height: 1.5001em;
+}
