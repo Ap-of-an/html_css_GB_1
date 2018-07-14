@@ -20,6 +20,9 @@ header {
   background-color: #445162;
   color: #ffffff;
 }
+header .left {
+  float: left;
+}
 header .product-img-1 {
   background-color: #ffffff;
   float: right;
@@ -28,7 +31,7 @@ header .product-img-1 {
   header .product-img-1 {
     width: 469px;
     height: 214px;
-    margin-top: -56px;
+    margin-top: 75px;
   }
   header ul {
     margin-top: 50px;
@@ -36,9 +39,9 @@ header .product-img-1 {
 }
 @media (min-width: 800px) and (max-width: 1279px) {
   header .product-img-1 {
-    width: 400px;
+    width: 349px;
     height: 170px;
-    margin-top: -45px;
+    margin-top: 54px;
   }
   header ul {
     margin-top: 40px;
@@ -49,9 +52,10 @@ header .product-img-1 {
     max-width: 500px;
     height: 120px;
     float: none;
+    margin-top: 76px;
   }
   header ul {
-    margin-top: 30px;
+    margin-top: 150px;
   }
 }
 header li {
@@ -251,7 +255,7 @@ header li {
 @media (max-width: 799px) {
   #reviews li {
     float: none;
-    width: unset;
+    width: auto;
   }
 }
 /* #endregion reviews */
