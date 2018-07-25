@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Киноучёт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/film.js"></script>
+  <script src="js/add_films.js"></script>
+</head>
+
+<body>
+  <div class="container clearfix">
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Логотип">
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#">Новинки</a>
+          </li>
+          <li class="active-item-menu">
+            <a href="#">Фильмы</a>
+          </li>
+          <li>
+            <a href="#">Сериалы</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <aside>
+        <nav>
+          <h2>Жанры</h2>
+          <ul>
+            <!-- список категорий заполняется из script.js -->
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <!-- <section class="film">
+          <div class="name_stars">
+            <h2>Film name</h2>
+            <div>Рейтинг фильма: <span class="stars">4.5</span></div>
+          </div>
+          <div class="poster_description">
+            <div class="poster">
+              <img src="img/film-img.jpg" alt="Постер фильма">
+            </div>
+            <div class="description">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, iste at error saepe temporibus quas libero voluptatibus quae veritatis hic rerum fugit laboriosam ducimus repellendus sunt inventore quo blanditiis vero deserunt unde velit quod dolorem sit doloremque. Assumenda aliquid qui dolorem laborum magni officiis sunt, mollitia doloribus tempora enim, adipisci ipsum! Enim provident odio modi consectetur, rerum illum porro fuga deleniti obcaecati esse alias accusamus id minus consequuntur sit iusto impedit quia quaerat dolore ea? Dignissimos, voluptatum repellat nesciunt aperiam debitis laboriosam harum ex accusantium? Obcaecati a sint deleniti cumque possimus in, sed recusandae nobis dicta commodi facilis, hic est!</p>
+            </div>
+          </div>
+          <div class="comments">
+            <div class="comment_button">
+              <h3>Отзывы: <span class="no-com"><br>Ещё никто не оценил этот фильм. Будьте первым! =></span></h3>
+              <div class="btn-feedback">добавить отзыв</div>
+            </div>
+            <form id="add-comment" action="#" method="post" oninput="level.value = flevel.valueAsNumber">
+              <label for="name">Введите ваше имя: 
+                <input id="name" maxlength="20" type="text" placeholder="Иван" autocomplete="off">
+              </label>
+              <label for="count-stars">Оцените фильм по 5-бальной шкале:
+                <div>
+                  <input name="flevel" id="flying" type="range" min="0" max="5" step="0.1">
+                  <output for="flying" name="level">2.5</output>
+                </div>
+              </label>
+              <label for="text-comment">Ваш комментарий <span class="maxLenth-text">(максмум 300 символов)</span>:</label>
+              <textarea id="text-comment" maxlength="300" autocomplete="off"></textarea>            
+              <input id="btn-addComment" type="submit" value="Отправить">
+            </form>
+            <div class="comment">
+              <div class="date_author">
+                <p class="author">Автор: <span class="author-name">author</span></p>
+                <p class="comment-date">Дата отзыва: <span class="date">01-01-2000</span></p>
+              </div>
+              <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium officiis corporis cumque sit ipsam animi aut a, ea in odit earum reiciendis, repudiandae vitae ratione enim! Nemo quisquam iure velit ut consequuntur consectetur, sint doloremque dignissimos recusandae ullam. Provident illo eligendi, ex incidunt commodi aspernatur quam consequuntur aut porro.</p>
+              <p class="author-stars">Оценка фильма: <span class="author-stars-amount">3.5</span></p>
+            </div>
+
+          </div>
+        </section> -->
+      </main>
+    </div>
+  </div>
+
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
