@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'my_fonts';
+  src: url('../font/my_fonts.eot?55005271');
+  src: url('../font/my_fonts.eot?55005271#iefix') format('embedded-opentype'),
+       url('../font/my_fonts.woff2?55005271') format('woff2'),
+       url('../font/my_fonts.woff?55005271') format('woff'),
+       url('../font/my_fonts.ttf?55005271') format('truetype'),
+       url('../font/my_fonts.svg?55005271#my_fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+ [class$="icon-"]:before, [class*="icon- "]:before {
+  font-family: "my_fonts";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+ 
+
+  line-height: 1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.arrow-text_icon-:before { content: '\e800'; }
+.cart_icon-:before { content: '\e801'; }
+.cup_icon-:before { content: '\e802'; }
+.folder_icon-:before { content: '\e803'; }
+.heart_icon-:before { content: '\e804'; }
+.label-list_icon-:before { content: '\e805'; }
+.layers_icon-:before { content: '\e806'; }
+.left_icon-:before { content: '\e807'; }
+.link_icon-:before { content: '\e808'; }
+.lupa_icon-:before { content: '\e80a'; }
+.message_icon-:before { content: '\e80b'; }
+.pen_icon-:before { content: '\e80c'; }
+.people_icon-:before { content: '\e80d'; }
+.play_icon-:before { content: '\e80e'; }
+.right_icon-:before { content: '\e80f'; }
+.search_icon-:before { content: '\e810'; }
+.settings_icon-:before { content: '\e811'; }
+.tray_cover_icon-:before { content: '\e812'; }
