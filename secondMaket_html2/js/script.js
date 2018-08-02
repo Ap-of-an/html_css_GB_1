@@ -51,3 +51,25 @@ let toggler = document.getElementById("toggler");
 toggler.addEventListener("click", function() {
   document.getElementsByTagName("header")[0].classList.toggle("dark-header");
 }, false);
+
+
+/* переключение категорий последних проектов*/
+let cat = document.querySelector(".categories");
+let target_cat = document.querySelector(".cat-items");
+
+let current_cat = cat.querySelector(".active");
+let choosen_cat;
+for(let i = 0; i < cat.children.length; i++) {
+  cat.children[i].addEventListener("click", function(e) {
+    e.preventDefault();
+    if(cat.children[i].classList.contains("active")) {
+      return;
+    }    
+    choosen_cat = cat.children[i];
+    current_cat.classList.remove("active");
+    choosen_cat.classList.add("active");
+    target_cat.querySelector(`.${current_cat.id}`).classList.remove("show");
+    target_cat.children[i].classList.add("show");
+    current_cat = choosen_cat;
+  }, false);
+}
