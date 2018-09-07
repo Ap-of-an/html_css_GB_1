@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+<body>
+  <section>
+    <h2>Задание 1</h2>
+    <form action="#" method="get" onsubmit="return false;">
+      <label for="number">Введите количество повторений функции(от 0 до 4-х): </label>
+      <input type="number" name="number" id="number" min="0" max="4" value="0">
+      <input type="submit" value="Выполнить" id="btn-submit_task1">
+    </form>
+    <div id="task1" style="border: 1px solid #ccc; display: inline-block; padding: 10px;"></div>
+  </section>
+  <section>
+    <h2>Задание 2</h2>
+    <p>Вычисление площади прямоугольника</p>
+    <form action="#" method="get" onsubmit="return false;">
+      <label for="length">Длина: </label>
+      <input type="number" name="n1" id="length" min="0">
+      <br>
+      <br>
+      <label for="width">Ширина: </label>
+      <input type="number" name="width" id="width" min="0">
+      <br>
+      <br>
+      <input id="btn-submit_task2" type="submit" value="Вычислить">
+    </form>
+    <br>
+    <div id="task2" style="border: 1px solid #ccc; display: inline-block; padding: 10px;"></div>
+  </section>
+  <section>
+    <h2>Задание 3</h2>
+    <p>Результат смотрите в консоли</p>
+  </section>
+  <section>
+    <h2>Задание 4</h2>
+    <span>Нажмите, чтобы ввести данные</span>
+    <button id="task4">Начать</button>
+    <span style="color: #bbb; font-size: 13px;"> (результат смотрите в консоли)</span>
+  </section>
+  <section>
+    <h2>Задание 5</h2>
+    <p>Результат смотрите в консоли</p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
